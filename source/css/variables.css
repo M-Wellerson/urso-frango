@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Manrope';
+    src: url('./../font/Manrope.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Anybody';
+    src: url('./../font/Anybody.woff2') format('woff2');
+}
+
+
+:root {
+    --primary-color: #e3e0d7;
+    --grey: #3b3b3b;
+    --red: #fb3729;
+    --yellow: #ffbb39;
+
+    --font-family: 'Manrope';
+
+    --width-default: 80%;
+}

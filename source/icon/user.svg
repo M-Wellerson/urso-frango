@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="18px" viewBox="0 0 15 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Menu-Ipad" transform="translate(-423.000000, -21.000000)" stroke="#3B3B3B">
+            <g id="Group" transform="translate(424.000000, 22.000000)">
+                <circle id="Oval" cx="6.5" cy="3.5" r="3.5"></circle>
+                <path d="M12.9810945,9.28274349 C12.9936219,9.44759559 13,9.61416623 13,9.78222656 C13,13.3720774 10.0898509,16.2822266 6.5,16.2822266 C2.91014913,16.2822266 0,13.3720774 0,9.78222656 C0,9.61416623 0.00637812272,9.44759559 0.0189055142,9.28274349 Z" id="Combined-Shape" transform="translate(6.500000, 12.782485) rotate(-180.000000) translate(-6.500000, -12.782485) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

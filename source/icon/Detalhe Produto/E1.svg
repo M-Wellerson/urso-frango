@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>E1</title>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="parceirias-copy-4" transform="translate(-731.000000, -1318.000000)">
+            <g id="E1" transform="translate(731.000000, 1318.000000)">
+                <path d="M19,12 C22.8659932,12 26,15.1340068 26,19 C26,22.8659932 22.8659932,26 19,26 C15.1340068,26 12,22.8659932 12,19 C12,15.1340068 15.1340068,12 19,12 M19,10 C14.0294373,10 10,14.0294373 10,19 C10,23.9705627 14.0294373,28 19,28 C23.9705627,28 28,23.9705627 28,19 C28,14.0294373 23.9705627,10 19,10 L19,10 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                <polygon id="Path" points="7 7 31 7 31 31 7 31"></polygon>
+                <g id="Group" transform="translate(19.000563, 19.000000) rotate(-45.000000) translate(-19.000563, -19.000000) translate(6.000563, 6.000000)" fill="#000000" fill-rule="nonzero">
+                    <polygon id="Path" points="12.5 0.27 13.5 0.27 13.5 25.73 12.5 25.73"></polygon>
+                    <polygon id="Path" points="0.27 12.5 25.73 12.5 25.73 13.5 0.27 13.5"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

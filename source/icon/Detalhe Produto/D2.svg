@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>D2</title>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="parceirias-copy-4" transform="translate(-1035.000000, -1292.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="D2" transform="translate(1035.000000, 1292.000000)">
+                <path d="M20,13.63 L0,13.63 L0.45,12.31 C1.78483017,8.39413774 5.46288176,5.76121556 9.6,5.76 L20,5.76 L20,13.63 Z M2.92,11.63 L18,11.63 L18,7.75 L9.58,7.75 C6.82416672,7.7529447 4.28174733,9.23411395 2.92,11.63 L2.92,11.63 Z" id="Shape"></path>
+                <path d="M20,13.63 L0,13.63 L0.45,12.31 C1.78483017,8.39413774 5.46288176,5.76121556 9.6,5.76 L17.9,5.76 C17.4461652,4.00218148 15.8654291,2.77043908 14.05,2.76 L7.13,2.76 L7.13,0.76 L14,0.76 C17.3137085,0.76 20,3.4462915 20,6.76 L20,13.63 Z M2.92,11.63 L18,11.63 L18,7.75 L9.58,7.75 C6.82416672,7.7529447 4.28174733,9.23411395 2.92,11.63 L2.92,11.63 Z" id="Shape"></path>
+                <circle id="Oval" cx="11.25" cy="9.25" r="1.25"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
