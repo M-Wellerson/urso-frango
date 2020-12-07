@@ -3,7 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi">
     <title>Urso Frango</title>
     <link rel="stylesheet" href="./source/css/main.css">
 </head>
@@ -16,8 +19,28 @@
             <a href="">O que fazemos?</a>
             <a href="">Trips</a>
             <a href="">Parceirias</a>
+            <input id="nav-mobile" type="checkbox" hidden>
+            <div class="menu__options--mobile-icon">
+                <label for="nav-mobile">
+                    <img src="./source/icon/menu.svg" alt="Menu">
+                </label>
+            </div>
             <div class="menu__options--mobile">
-                <img src="./source/icon/menu.svg" alt="Menu">
+                <div class="menu__options--mobile__inner">
+                    <a href="">origem</a>
+                    <a href="">O que fazemos?</a>
+                    <a href="">Trips</a>
+                    <a href="">Parceirias</a>
+                    <div class="menu__options--mobile__inner--flag">
+                        <img src="./source/icon/brasil.svg" alt="Brasil">
+                        <img src="./source/icon/estados-unidos.svg" alt="Estados Unidos">
+                    </div>
+                    <div class="menu_social-media-mobile">
+                        <img src="./source/icon/youtube/outline-round.svg" alt="Youtube">
+                        <img src="./source/icon/instagram/outline-round.svg" alt="Instagram">
+                        <img src="./source/icon/facebook/outline-round.svg" alt="Facebook">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="menu__shop">
@@ -69,28 +92,28 @@
                     <img src="./source/img/bones-bone-aba-curva-preto--p-1579270396879.jpg">
                     <div class="main-home__products--item__price">
                         <span>Nome Produto</span>
-                        <span>R$00000,00</span>
+                        <span>R$100,00</span>
                     </div>
                 </div>
                 <div class="main-home__products--item">
                     <img src="./source/img/bones-bone-aba-curva-preto--p-1579270396879.jpg">
                     <div class="main-home__products--item__price">
                         <span>Nome Produto</span>
-                        <span>R$ 00000,00</span>
+                        <span>R$100,00</span>
                     </div>
                 </div>
                 <div class="main-home__products--item">
                     <img src="./source/img/bones-bone-aba-curva-preto--p-1579270396879.jpg">
                     <div class="main-home__products--item__price">
                         <span>Nome Produto</span>
-                        <span>R$ 00000,00</span>
+                        <span>R$100,00</span>
                     </div>
                 </div>
                 <div class="main-home__products--item">
                     <img src="./source/img/bones-bone-aba-curva-preto--p-1579270396879.jpg">
                     <div class="main-home__products--item__price">
                         <span>Nome Produto</span>
-                        <span>R$ 00000,00</span>
+                        <span>R$100,00</span>
                     </div>
                 </div>
             </div>
@@ -209,6 +232,29 @@
             </div>
         </div>
     </footer>
+
+    <div class="popup__cart">
+        <div class="popup__cart--header">
+            <h3>Meu carrinho</h3>
+            <div class="popup__cart--header--close">
+                <img src="./source/icon/cross.svg">
+            </div>
+        </div>
+        <div class="popup__cart--product">
+            <img src="./source/icon/cross.svg" alt="">
+            <img src="./source/img/banner-2.jpg" alt="">
+            <span>Sweat Original x1</span>
+            <span>R$100,00</span>
+        </div>
+        <div class="popup__cart--price">
+            <span>Total</span>
+            <span>R$100,00</span>
+        </div>
+        <div class="popup__cart--btn">
+            <a class="btn btn-large--black" href="#">Ver o carrinho</a>
+            <a class="btn btn-large--black" href="#">Finalizar Comprar</a>
+        </div>
+    </div>
 
     <script src="./source/js/font-variable.js"></script>
 </body>
