@@ -7,7 +7,6 @@
 .main-home__img {
     position: relative;
     min-height: 600px; 
-
     background-image: url("../img/img-1.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -17,8 +16,7 @@
 
 .main-home__img--2 {
     position: relative;
-    min-height: 600px; 
-
+    min-height: 600px;
     background-image: url("../img/surfer.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -324,7 +322,12 @@
 .main-home__img-supere__inner {
     position: relative;
     width: var(--width-default);
-    height: auto;
+    max-height: 100%;
+    height: 530px;
+    background-image: url("./../img/skate.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-home__img-supere__inner .btn {
@@ -337,7 +340,7 @@
 
 .main-home__img-supere--novo {
     position: absolute;
-    right: 0;
+    right: -30px;
     top: 50px;
     width: 104px;
     height: 34px;
@@ -352,11 +355,6 @@
     font-style: italic;
     letter-spacing: 0.57px;
     color: #ffffff;
-}
-
-.main-home__img-supere img {
-    width: 95%;
-    height: auto;
 }
 
 .main-home__img-supere--novo-1 {
@@ -382,7 +380,12 @@
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) {
-    
+    .main-home__products__inner, .main-home__colecao--item__containner {
+        width: 100%;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        overflow-y: visible;
+    }
 }
 
 @media only screen 
@@ -420,6 +423,15 @@
     .main-home__products--item {
         width: 300px;
         height: auto;
+    }
+
+    .main-home__img-supere__inner {
+        height: 330px;
+    }
+
+    .main-home__img-supere__inner .btn {
+        left: 15%;
+        bottom: 30px;
     }
 
 }
