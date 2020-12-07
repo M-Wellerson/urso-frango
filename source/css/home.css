@@ -419,7 +419,7 @@
     
     .main-home__products--item {
         width: 244px;
-        height: 244px;
+        height: auto;
     }
 
 }
