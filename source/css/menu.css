@@ -71,7 +71,7 @@
     height: 100%;
     padding-top: 50px;
     background-color: var(--yellow);
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-fill-mode: both;
     animation-name: fadeBottomDiv;
     transition-timing-function: ease-in;
@@ -274,10 +274,11 @@
 }
 
 @keyframes fadeBottomDiv {
-    0% {opacity: 1; transform: translateY(-1%);}
-    33% {opacity: 1}
-    44% {opacity: 1}
-    100% {opacity: 1}
+    from {
+        height: 0;
+        transform: transform: translateY(-1%);
+    }
+    to { height: 100% }
 }
 
 @media only screen 
