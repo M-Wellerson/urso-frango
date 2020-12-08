@@ -133,7 +133,7 @@
     fill:none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
     stroke: var(--grey);
-    stroke-width: 4.5;
+    stroke-width: 2;
     stroke-linecap: round;
 }
 
