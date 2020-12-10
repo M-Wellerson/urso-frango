@@ -337,9 +337,9 @@
 @keyframes fadeBottomDiv {
     from {
         height: 0;
-        transform: transform: translateY(-1%);
+        transform: transform translateY(-1%);
     }
-    to { height: 100vh }
+    to { height: 100vh; }
 }
 
 @media only screen 
