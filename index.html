@@ -12,13 +12,25 @@
 </head>
 
 <body>
-    <nav class="menu">
+    <header class="header">
+        <div class="header__inner">
+            <div>
+                <a href="">Entrar em Contato</a>
+            </div>
+            <div>
+                <span>Olá, <span class="text--extra-bold">Marcos</span></span>
+            </div>
+        </div>
+    </header>
+    <nav class="menu grassphomisf">
         <img src="./source/icon/logo/horizontal-logo.svg" alt="Urso Frango">
+
         <div class="menu__options">
             <a href="">origem</a>
             <a href="">O que fazemos?</a>
             <a href="">Trips</a>
             <a href="">Parceirias</a>
+            <a href="">shop</a>
             <input id="nav-mobile" type="checkbox" hidden>
             <div class="menu__options--mobile-icon">
                 <label for="nav-mobile">
@@ -50,15 +62,14 @@
                 </div>
             </div>
         </div>
-        <div class="menu__shop">
-            <a href="">shop</a>
-            <img src="./source/icon/user.svg" alt="Usuário">
-            <img src="./source/icon/cart.svg" alt="Carrinho">
-        </div>
-        <div class="menu_social-media">
-            <img src="./source/icon/youtube/outline-round.svg" alt="Youtube">
-            <img src="./source/icon/instagram/outline-round.svg" alt="Instagram">
-            <img src="./source/icon/facebook/outline-round.svg" alt="Facebook">
+
+        <div class="menu--icon">
+            <div>
+                <img src="./source/icon/cart.svg" alt="Carrinho">
+            </div>
+            <div>
+                <img src="./source/icon/mode-lamp.svg" alt="Dark Mode">
+            </div>
         </div>
     </nav>
     <section class="main-home">
@@ -217,6 +228,27 @@
                 </div>
             </div>
         </div>
+        <div class="main-home__insta">
+            <div class="main-home__insta--text">
+                <h1>Insta</h1>
+            </div>
+            <div class="main-home__insta--item__containner">
+                <div class="main-home__insta--item">
+                    <div>
+                        <img src="./source/img/user.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="./source/img/user.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="./source/img/user.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="./source/img/user.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
@@ -303,6 +335,7 @@
     </footer>
 
     <script src="./source/js/font-variable.js"></script>
+    <script src="./source/js/main.js"></script>
 </body>
 
 </html>

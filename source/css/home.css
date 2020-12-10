@@ -190,14 +190,14 @@
     font-weight: bolder;
 }
 
-.main-home__colecao, .main-home__trips {
+.main-home__colecao, .main-home__trips, .main-home__insta {
     display: grid;
     align-items: center;
     justify-items: center;
     width: 100%;
 }
 
-.main-home__colecao--text, .main-home__trips--text {
+.main-home__colecao--text, .main-home__trips--text, .main-home__insta--text {
     width: var(--width-default);
     display: grid;
     grid-template-columns: 90% 10%;
@@ -205,7 +205,7 @@
     align-items: center;
 }
 
-.main-home__colecao--text h1, .main-home__trips--text h1 {
+.main-home__colecao--text h1, .main-home__trips--text h1, .main-home__insta--text h1 {
     display: inline-block;
     font-family: Anybody;
     text-transform: uppercase;
@@ -214,6 +214,11 @@
     font-style: italic;
     line-height: normal;
     letter-spacing: 2.67px;
+    margin: 30px 0 30px 0;
+}
+
+.main-home__insta--text h1 {
+   font-family: Anybody-Extra-Bold;
 }
 
 .btn {
@@ -238,7 +243,7 @@
     filter: brightness(200%);
 }
 
-.main-home__colecao--item, .main-home__trip--item {
+.main-home__colecao--item, .main-home__trip--item, .main-home__insta--item__containner {
     width: 100%;
     height: auto;
     display: grid;
@@ -248,12 +253,26 @@
     border-bottom: 1px solid #211D26;
 }
 
-.main-home__colecao--item__containner, .main-home__trip--item__containner {
+.main-home__colecao--item__containner, .main-home__trip--item__containner, .main-home__insta--item {
     width: var(--width-default);
     height: auto;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.main-home__insta--item {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main-home__insta--item div {
+    border-right: 1px solid #211D26;
+}
+
+.main-home__insta--item__containner div > img {
+    width: 300px;
+    height: auto;
+    margin: 25px;
 }
 
 .main-home__colecao--item__inner, .main-home__trip--item__inner {
@@ -280,7 +299,7 @@
     margin-right: auto;
 }
 
-.main-home__colecao--item__inner:first-child, .main-home__trip--item__inner:first-child {
+.main-home__colecao--item__inner:first-child, .main-home__trip--item__inner:first-child, .main-home__insta--item div:first-child {
     border-left: 1px solid #211D26;
 }
 
@@ -412,7 +431,7 @@
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) {
-    .main-home__products__inner, .main-home__colecao--item__containner, .main-home__trip--item__containner {
+    .main-home__products__inner, .main-home__colecao--item__containner, .main-home__trip--item__containner, .main-home__insta--item__containner {
         width: 100%;
         scroll-snap-type: x mandatory;
         overflow-x: scroll;
@@ -445,7 +464,7 @@
         height: 375px;
     }
     
-    .main-home__products__inner, .main-home__colecao--item__containner, .main-home__trip--item__containner {
+    .main-home__products__inner, .main-home__colecao--item__containner, .main-home__trip--item__containner, .main-home__insta--item__containner {
         width: 100%;
         scroll-snap-type: x mandatory;
         overflow-x: scroll;
