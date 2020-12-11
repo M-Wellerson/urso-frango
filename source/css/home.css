@@ -600,7 +600,7 @@
         line-height: 25px;
     }
 
-    .main-home__colecao--item__inner img, .main-home__trip--item__inner img {
+    .main-home__colecao--item__inner img, {
         display: block;
         max-width: 245px;
         height: 310px;
