@@ -270,7 +270,6 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    border-top: 1px solid #211D26;
     border-bottom: 1px solid #211D26;
 }
 
@@ -404,7 +403,6 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    border-top: 1px solid #211D26;
     border-bottom: 1px solid #211D26;
     padding: 55px 0 55px 0;
 }
