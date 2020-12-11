@@ -1,12 +1,23 @@
 @font-face {
     font-family: 'Manrope';
-    src: url('./../font/Manrope.ttf') format('truetype');
+    src: url('./../font/Manrope/Manrope.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope-light';
+    src: url('./../font/Manrope/Manrope-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Anybody';
     src: url('./../font/Anybody/Anybody.woff2') format('woff2');
 }
+
+@font-face {
+    font-family: 'Anybody-Light';
+    src: url('./../font/Anybody/Anybody-Light.woff2') format('woff2');
+}
+
 @font-face {
     font-family: 'Anybody-Extra-Bold';
     src: url('./../font/Anybody/Anybody-ExtraExpandedBold.woff2') format('woff2');

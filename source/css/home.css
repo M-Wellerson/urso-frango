@@ -162,7 +162,7 @@
 .main-home__products__inner img {
     width: 90%;
     height: auto;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .main-home__products--item {
@@ -426,6 +426,10 @@
     font-weight: 600;
     letter-spacing: 2.5px;
     color: var(--grey);
+}
+
+.border--img {
+    border: 1px solid var(--grey);
 }
 
 @media only screen 

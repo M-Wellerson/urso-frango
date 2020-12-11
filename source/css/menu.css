@@ -138,7 +138,7 @@
     left: 0%;
     right: 0%;
     height: 100vh;
-    padding-top: 50px;
+    padding-top: 30px;
     background-color: var(--yellow);
     animation-duration: 1s;
     animation-name: fadeBottomDiv;
@@ -156,11 +156,11 @@
 
 .menu__options--mobile__inner a {
     display: block;
-    font-family: Anybody;
+    font-family: Anybody-Light;
     font-size: 60px;
     font-weight: 200;
     font-stretch: expanded;
-    letter-spacing: 0.86px;
+    letter-spacing: 5px;
     text-align: center;
     color: var(--grey);
     border-bottom: 1px solid var(--grey);
@@ -170,7 +170,7 @@
 .menu__options--mobile__inner--flag {
     text-align: center;
     border-bottom: 1px solid var(--grey);
-    padding: 35px;
+    padding: 20px;
 }
 
 .menu__options--mobile__inner--flag img {
@@ -198,7 +198,7 @@
 }
 
 .line {
-    fill:none;
+    fill :none;
     transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
     stroke: var(--grey);
     stroke-width: 2;
@@ -232,7 +232,7 @@
 }
 
 .menu_social-media-mobile img {
-    width: 70px;
+    width: 55px;
     height: auto;
 }
 
@@ -331,6 +331,26 @@
 .menu__options--mobile__inner a, .menu__options--mobile__inner div {
     animation-duration: 2.5s;
     animation-fill-mode: both;
+}
+
+.menu--icon--cart {
+    cursor: pointer;
+}
+
+.menu--icon--cart svg {
+    width: 26px;
+}
+
+.menu--icon--cart-svg path {
+    fill: #3b3b3b;
+    stroke: #3b3b3b;
+    stroke-width: .1;
+    stroke-linecap: butt;
+    stroke-dasharray: 0;
+}
+
+.menu--icon--cart:hover .menu--icon--cart-svg path {
+    stroke-width: .4;
 }
 
 @keyframes fadeBottom {
