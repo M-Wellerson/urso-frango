@@ -6,17 +6,17 @@
 
 .main-home__img {
     position: relative;
-    min-height: 600px; 
-    background-image: url("../img/img-1.jpg");
+    height: 5000px;
+    /* background-image: url("../img/img-1.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
 
 .main-home__img--2 {
     position: relative;
-    min-height: 600px;
+    min-height: 1000px;
     background-image: url("../img/surfer.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -64,7 +64,7 @@
     align-items: center;
     justify-content: center;
     width: var(--width-default);
-    height: 400px;
+    height: 350px;
  }
 
 .main__variable-font--inner h1 {
@@ -72,7 +72,6 @@
     color: #fff;
     width: 100%;
     user-select: none;
-    line-height: 0.5em;
     margin: 0 auto;
     text-transform: uppercase;
     font-size: 400px;
@@ -132,6 +131,8 @@
 
 .main-home__text {
     font-family: Manrope;
+    font-size: 25px;
+    line-height: 35px;
     letter-spacing: 2px;
     display: block;
     margin: 0 auto;
