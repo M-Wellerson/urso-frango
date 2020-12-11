@@ -206,6 +206,11 @@
     align-items: center;
 }
 
+.main-home__insta--text {
+    width: 100%;
+    border-bottom: 1px solid #211D26;
+}
+
 .main-home__colecao--text h1, .main-home__trips--text h1, .main-home__insta--text h1 {
     display: inline-block;
     font-family: Anybody;
@@ -244,7 +249,7 @@
     filter: brightness(200%);
 }
 
-.main-home__colecao--item, .main-home__trip--item, .main-home__insta--item__containner {
+.main-home__colecao--item, .main-home__trip--item {
     width: 100%;
     height: auto;
     display: grid;
@@ -254,26 +259,12 @@
     border-bottom: 1px solid #211D26;
 }
 
-.main-home__colecao--item__containner, .main-home__trip--item__containner, .main-home__insta--item {
+.main-home__colecao--item__containner, .main-home__trip--item__containner {
     width: var(--width-default);
     height: auto;
     display: grid;
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
-}
-
-.main-home__insta--item {
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.main-home__insta--item div {
-    border-right: 1px solid #211D26;
-}
-
-.main-home__insta--item__containner div > img {
-    width: 300px;
-    height: auto;
-    margin: 25px;
 }
 
 .main-home__colecao--item__inner, .main-home__trip--item__inner {
@@ -300,8 +291,31 @@
     margin-right: auto;
 }
 
-.main-home__colecao--item__inner:first-child, .main-home__trip--item__inner:first-child, .main-home__insta--item div:first-child {
+.main-home__colecao--item__inner:first-child, .main-home__trip--item__inner:first-child {
     border-left: 1px solid #211D26;
+}
+
+.main-home__insta--item__containner {
+    width: var(--width-default);
+    height: auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main-home__insta--item__containner div {
+    width: 100%;
+    border-right: 1px solid #211D26;
+}
+
+.main-home__insta--item__containner div:first-child {
+    border-left: 1px solid #211D26;
+}
+
+.main-home__insta--item__containner img {
+    margin: 20px 0 20px 0;
+    max-width: 300px;
+    height: auto;
 }
 
 .main-home__colecao--item__inner img, .main-home__trip--item__inner img {
@@ -442,6 +456,9 @@
         overflow-x: scroll;
         overflow-y: visible;
     }
+    .main-home__insta--item__containner img {
+        width: 80%;
+    }
 }
 
 @media only screen 
@@ -488,6 +505,18 @@
     .main-home__img-supere__inner .btn {
         left: 15%;
         bottom: 30px;
+    }
+
+    .main-home__insta--item__containner {
+       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-home__insta--item__containner div {
+        border-bottom: 1px solid #211D26;
+    }
+
+    .main-home__insta--item__containner img {
+        width: 150px;
     }
 
 }
