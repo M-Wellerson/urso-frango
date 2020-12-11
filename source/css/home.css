@@ -189,6 +189,28 @@
     height: 50px;
     padding-top: 10px;
     text-align: left;
+    font-size: 15px;
+}
+
+.main-home__products--item--img {
+    position: relative;
+}
+
+.main-home__products--item .btn {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 190px;
+    background-color: var(--grey);
+    color: #fff;
+}
+
+.main-home__products--item:hover .btn{
+    display: flex;
 }
 
 .main-home__products--item__price span {
@@ -196,7 +218,8 @@
 }
 
 .main-home__products--item__price span:first-child {
-    font-weight: bolder;
+    font-family: Manrope-ExtraBold;
+    margin-bottom: 7px;
 }
 
 .main-home__colecao, .main-home__trips, .main-home__insta {
@@ -244,7 +267,6 @@
 
 .btn {
     display: flex;
-    border-radius: 4px;
     justify-content: center;
     align-items: center;
     text-decoration: none;
@@ -282,11 +304,22 @@
 }
 
 .main-home__colecao--item__inner, .main-home__trip--item__inner {
+    width: 100%;
     height: auto;
     display: grid;
     align-items: center;
-    padding: 25px;
+    justify-items: center;
     border-right: 1px solid #211D26;
+    margin: 0 15px 0 15px;
+}
+
+.main-home__colecao--item__inner div, .main-home__trip--item__inner div {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.main-home__trip--item__inner div {
+    
 }
 
 .main-home__colecao--item__inner:hover, .main-home__trip--item__inner:hover {
@@ -336,6 +369,7 @@
     display: block;
     max-width: 355px;
     height: 450px;
+    object-fit: cover;
     margin-left: auto;
     margin-right: auto;
 }
@@ -358,7 +392,8 @@
 
 .main-home__trip--body {
     display: grid;
-    grid-template-columns: 1fr 100px;
+    width: 100%;
+    grid-template-columns: 80% 20%;
     margin-top: 25px;
 }
 
@@ -490,6 +525,15 @@
         grid-template-columns: 1fr;
         margin-bottom: 15px;
     }
+
+    .main-home__colecao--text div, .main-home__trips--text div, .main-home__insta--text div {
+        grid-template-columns: 1fr;
+    }
+
+    .main-home__colecao--text a, .main-home__trips--text a, .main-home__insta--text a {
+        justify-self: center;
+        margin-bottom: 40px;
+    }
     
     .main-home__colecao--text h1, .main-home__trips--text h1 {
         font-size: 50px;
@@ -512,7 +556,15 @@
         width: 100%;
         scroll-snap-type: x mandatory;
         overflow-x: scroll;
-        overflow-y: visible;
+        overflow-y: hidden;
+    }
+
+    .main-home__colecao--text, .main-home__trips--text {
+        margin-bottom: 0 ;
+    }
+
+    .main-home__insta--item__containner {
+        height: 100%;
     }
     
     .main-home__products--item {
@@ -539,6 +591,26 @@
 
     .main-home__insta--item__containner img {
         width: 150px;
+    }
+
+    .main-home__text {
+        font-size: 15px;
+        grid-column-gap: 0;
+        letter-spacing: 1px;
+        line-height: 25px;
+    }
+
+    .main-home__colecao--item__inner img, .main-home__trip--item__inner img {
+        display: block;
+        max-width: 245px;
+        height: 310px;
+        object-fit: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footer__item__social div:first-child {
+        display: none;
     }
 
 }

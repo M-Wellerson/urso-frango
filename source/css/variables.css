@@ -9,6 +9,16 @@
 }
 
 @font-face {
+    font-family: 'Manrope-bold';
+    src: url('./../font/Manrope/Manrope-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope-ExtraBold';
+    src: url('./../font/Manrope/Manrope-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'Anybody';
     src: url('./../font/Anybody/Anybody.woff2') format('woff2');
 }
