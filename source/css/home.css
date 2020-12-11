@@ -198,7 +198,7 @@
     width: 100%;
 }
 
-.main-home__colecao--text, .main-home__trips--text, .main-home__insta--text {
+.main-home__colecao--text div, .main-home__trips--text div, .main-home__insta--text div {
     width: var(--width-default);
     display: grid;
     grid-template-columns: 90% 10%;
@@ -206,9 +206,16 @@
     align-items: center;
 }
 
-.main-home__insta--text {
+.main-home__insta--text, .main-home__colecao--text, .main-home__trips--text {
     width: 100%;
+    display: grid;
+    align-items: center;
+    justify-items: center;
     border-bottom: 1px solid #211D26;
+}
+
+.main-home__colecao--text a, .main-home__trips--text a, .main-home__insta--text a {
+    justify-self: right;
 }
 
 .main-home__colecao--text h1, .main-home__trips--text h1, .main-home__insta--text h1 {
