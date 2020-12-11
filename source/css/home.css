@@ -130,6 +130,10 @@
 }
 
 .main-home__text {
+    display: grid !important;
+    grid-template-columns: 1fr 100px;
+    grid-column-gap: 50px;
+    align-items: center;
     font-family: Manrope;
     font-size: 25px;
     line-height: 35px;
@@ -140,6 +144,10 @@
     width: var(--width-default);
     padding-top: 15px;
     padding-bottom: 25px;
+}
+
+.main-home__text div {
+    justify-self: right;
 }
 
 .main-home__products {
@@ -376,9 +384,18 @@
     cursor: pointer;
 }
 
+.btn--arrow--invert {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
 .btn--arrow img {
     width: 22px;
     height: auto;
+}
+
+.btn--arrow--invert img {
+    filter: invert();
 }
 
 .main-home__img-supere {
