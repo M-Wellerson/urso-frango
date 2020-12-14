@@ -5,13 +5,9 @@
 }
 
 .main-home__img {
-    position: relative;
-    height: 5000px;
-    /* background-image: url("../img/img-1.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
+    position: absolute;
+    top: 0 !important;
+    height: 600px;
 }
 
 .main-home__img--2 {
