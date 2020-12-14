@@ -171,11 +171,11 @@
 }
 
 .main-home__products--item {
-    border-right: 1px solid var(--grey);
+    border-right: 1px solid var(--border-color);
 }
 
 .main-home__products--item:first-child {
-    border-left: 1px solid var(--grey);    
+    border-left: 1px solid var(--border-color);    
 }
 
 .main-home__products--item__price {
@@ -238,7 +238,7 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    border-bottom: 1px solid #211D26;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .main-home__colecao--text a, .main-home__trips--text a, .main-home__insta--text a {
@@ -270,7 +270,7 @@
     font-family: Manrope;
     width: 230px;
     height: 50px;
-    border: solid 1px var(--grey);
+    border: solid 1px var(--border-color);
     font-stretch: normal;
     font-style: normal;
     line-height: normal;
@@ -288,7 +288,7 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    border-bottom: 1px solid #211D26;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .main-home__colecao--item__containner, .main-home__trip--item__containner {
@@ -305,7 +305,7 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    border-right: 1px solid #211D26;
+    border-right: 1px solid var(--border-color);
     margin: 0 15px 0 15px;
 }
 
@@ -335,7 +335,7 @@
 }
 
 .main-home__colecao--item__inner:first-child, .main-home__trip--item__inner:first-child {
-    border-left: 1px solid #211D26;
+    border-left: 1px solid var(--border-color);
 }
 
 .main-home__insta--item__containner {
@@ -348,11 +348,11 @@
 
 .main-home__insta--item__containner div {
     width: 100%;
-    border-right: 1px solid #211D26;
+    border-right: 1px solid var(--border-color);
 }
 
 .main-home__insta--item__containner div:first-child {
-    border-left: 1px solid #211D26;
+    border-left: 1px solid var(--border-color);
 }
 
 .main-home__insta--item__containner img {
@@ -434,7 +434,7 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    border-bottom: 1px solid #211D26;
+    border-bottom: 1px solid var(--border-color);
     padding: 55px 0 55px 0;
 }
 
@@ -582,7 +582,7 @@
     }
 
     .main-home__insta--item__containner div {
-        border-bottom: 1px solid #211D26;
+        border-bottom: 1px solid var(--border-color);
     }
 
     .main-home__insta--item__containner img {
