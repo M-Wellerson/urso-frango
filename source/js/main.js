@@ -4,6 +4,10 @@ window.onscroll = function() {
     }else{
         document.querySelector('.header').style.display = 'grid';
     }
+
+    let rotate = window.scrollY / 600 % Math.PI;
+    document.querySelector('.rotate-logo--item').style.transform = `rotate(${rotate}rad)`;
+
 };
 
 let darkmode = {

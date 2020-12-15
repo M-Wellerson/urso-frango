@@ -27,9 +27,21 @@
 }
 
 .main-home__call {
+    position: relative;
     background-color: var(--bg-font-variable);
     color: #fff;
     height: auto;
+}
+
+.rotate-logo {
+    position: absolute;
+    right: 135px;
+    top: -10%;
+    z-index: 99;
+    background-image: url('./../icon/logo/logo-in.svg');
+    background-size: 300px 150px, cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .main__variable-font--text {
@@ -653,4 +665,8 @@
         display: none;
     }
 
+    .rotate-logo {
+        right: 20px;
+        top: -11%;
+    }
 }
