@@ -58,6 +58,10 @@
     padding-bottom: 3px;
 }
 
+.footer__item__info a:hover {
+    opacity: 1;
+}
+
 .footer_social--cards img, .footer_social-media--icons img {
     width: 36px;
     height: auto;

@@ -407,26 +407,10 @@ header {
     opacity: 1;
 }
 
-.dark .moon {
-    opacity: 0;
-}
-
 .sun {
     bottom: 5%;
     opacity: 0;
     transform: rotate(180deg);
-}
-
-.dark .sun {
-    opacity: 1;
-}
-
-.dark .invert {
-    filter: invert();
-}
-
-.dark .title-colecao span {
-    color: #3b3b3b;
 }
 
 @keyframes fadeBottom {
@@ -529,5 +513,9 @@ header {
 
     .header__inner div:first-child {
         border-left: none;
+    }
+    .sun-moon-container {
+        margin-top: 35%;
+        height: 20vh;
     }
 }

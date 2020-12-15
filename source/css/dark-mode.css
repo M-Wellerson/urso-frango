@@ -1,0 +1,20 @@
+.dark .moon {
+    opacity: 0;
+}
+
+.dark .sun {
+    opacity: 1;
+}
+
+.dark .invert {
+    filter: invert();
+}
+
+.dark .title-colecao span, .dark .title-trip span {
+    color: #3b3b3b !important;
+}
+
+.dark .main-home__products--item .btn {
+    background-color: #3b3b3b;
+    border: none;
+}
