@@ -33,11 +33,20 @@
     src: url('./../font/Anybody/Anybody-ExtraExpandedBold.woff2') format('woff2');
 }
 
+@font-face {
+	font-family: 'Anybody Flex';
+	src: url('./../font/Anybody[slnt,wdth,wght].woff2') format('woff2 supports variations'),
+       url('./../font/Anybody[slnt,wdth,wght].woff2') format('woff2-variations');
+    font-weight: 100 1000;
+	font-stretch: 25% 151%;
+}
+
 
 :root {
     --primary-color: #e3e0d7;
     --grey: #3b3b3b;
     --red: #fb3729;
+    --bg-font-variable: #fb3729;
     --yellow: #ffbb39;
     --glass: hsla(0, 0%, 100%, 0.5);
     --border-color: #161616;

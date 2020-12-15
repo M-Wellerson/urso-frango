@@ -27,7 +27,7 @@
 }
 
 .main-home__call {
-    background-color: var(--red);
+    background-color: var(--bg-font-variable);
     color: #fff;
     height: auto;
 }
@@ -249,14 +249,21 @@
 
 .main-home__colecao--text h1, .main-home__trips--text h1, .main-home__insta--text h1 {
     display: inline-block;
-    font-family: Anybody;
+    font-family: Anybody Flex;
     text-transform: uppercase;
     font-size: 80px;
-    font-weight: 100;
+    font-weight: 400;
+    font-stretch: 100%;
     font-style: italic;
-    line-height: normal;
     letter-spacing: 2.67px;
     margin: 30px 0 30px 0;
+    transition: font-weight 1s ease, font-stretch 1s ease;
+    cursor: default;
+}
+
+.main-home__colecao--text h1:hover, .main-home__trips--text h1:hover {
+    font-weight: 200;
+    font-stretch: 80%;
 }
 
 .main-home__insta--text h1 {
@@ -315,7 +322,7 @@
 .main-home__colecao--item__inner:hover, 
 .main-home__trip--item__inner:hover {
     background-color: var(--yellow);
-    filter: drop-shadow(0px 0px 15px var(--yellow));
+    filter: drop-shadow(0px 0px 7px var(--yellow));
     border: none;
     transition: 0.5s;
 }
@@ -374,6 +381,7 @@
     height: auto;
     background-color: #fff;
     margin-bottom: 33px;
+    text-transform: uppercase;
 }
 
 .title-colecao span, .title-trip span {

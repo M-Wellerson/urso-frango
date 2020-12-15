@@ -77,6 +77,11 @@ header {
     border: solid 2px transparent;
 }
 
+.menu > img {
+    width: 40%;
+    height: auto;
+}
+
 .menu a {
     text-decoration: none;
     color: var(--font-color);
@@ -105,20 +110,27 @@ header {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
 }
 
 .dark .lamp_mode-color  {
-    filter: drop-shadow(0px 0px 15px var(--yellow));
+    filter: drop-shadow(0px 0px 5px var(--yellow));
     cursor: pointer;
     background-color: var(--yellow);
     border: none;
 }
 
-.menu--icon--cart:hover, .lamp_mode-color {
-    filter: drop-shadow(0px 0px 15px var(--grey));
+.menu--icon--cart:hover, .lamp_mode-color:hover {
+    filter: drop-shadow(0px 0px 5px var(--grey));
     cursor: pointer;
     background-color: var(--grey);
     border: none;
+}
+
+.lamp_mode-color:hover img{
+    filter: invert();
+    transition: none;
 }
 
 .menu__options a:hover {
@@ -393,17 +405,17 @@ header {
     width: 100%;
     transform: rotate(calc(var(--rotation) * 1deg));
     transition: transform 1s;
+    margin-top: 6px;
 }
 
 .moon,
 .sun {
     position: absolute;
-    transition: opacity, red, 2s;
+    /* transition: opacity, 1s; */
 }
 
 .moon {
     top: 5%;
-    filter: invert();
     opacity: 1;
 }
 
@@ -514,8 +526,14 @@ header {
     .header__inner div:first-child {
         border-left: none;
     }
+
     .sun-moon-container {
         margin-top: 35%;
         height: 20vh;
+    }
+
+    .menu > img {
+        width: 80%;
+        height: auto;
     }
 }
