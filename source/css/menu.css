@@ -392,12 +392,13 @@ header {
     height: 20vmin;
     width: 100%;
     transform: rotate(calc(var(--rotation) * 1deg));
-    transition: transform 1.5s;
+    transition: transform 1s;
 }
 
 .moon,
 .sun {
     position: absolute;
+    transition: opacity, red, 2s;
 }
 
 .moon {
@@ -418,6 +419,14 @@ header {
 
 .dark .sun {
     opacity: 1;
+}
+
+.dark .invert {
+    filter: invert();
+}
+
+.dark .title-colecao span {
+    color: #3b3b3b;
 }
 
 @keyframes fadeBottom {

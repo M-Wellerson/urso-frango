@@ -18,14 +18,15 @@ const sunMoonContainer = document.querySelector('.sun-moon-container')
 
 document.querySelector('.lamp_mode-color').addEventListener('click', () => {
     let darkModeSet = document.body.classList.toggle('dark');
+    const currentRotation = parseInt(getComputedStyle(sunMoonContainer).getPropertyValue('--rotation')) + 180;
     if(darkModeSet) {
-        const currentRotation = parseInt(getComputedStyle(sunMoonContainer).getPropertyValue('--rotation'));
-        sunMoonContainer.style.setProperty('--rotation', currentRotation + 180);
+        sunMoonContainer.style.setProperty('--rotation', currentRotation);
         
         Object.entries(darkmode).forEach(items => {
             document.documentElement.style.setProperty(items[0], items[1].dark);
         });
     }else{
+        sunMoonContainer.style.setProperty('--rotation', currentRotation);
         Object.entries(darkmode).forEach(items => {
             document.documentElement.style.setProperty(items[0], items[1].light);
         });

@@ -314,12 +314,12 @@
     margin-bottom: 30px;
 }
 
-.main-home__trip--item__inner div {
-    
-}
-
-.main-home__colecao--item__inner:hover, .main-home__trip--item__inner:hover {
+.main-home__colecao--item__inner:hover, 
+.main-home__trip--item__inner:hover {
     background-color: var(--yellow);
+    filter: drop-shadow(0px 0px 15px var(--yellow));
+    border: none;
+    transition: 0.5s;
 }
 
 .main-home__colecao--item__inner:hover .btn {
@@ -373,7 +373,7 @@
 .title-colecao, .title-trip {
     display: block;
     width: 215px;
-    height: 27px;
+    height: auto;
     background-color: #fff;
     margin-bottom: 33px;
 }
