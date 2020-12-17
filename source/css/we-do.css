@@ -210,8 +210,88 @@
     color: var(--grey);
 }
 
+.main-wedo--we-are__item--info-text {
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: 0.4px;
+    color: var(--grey);
+}
+
 .main-wedo--we-are__item--info:last-child {
     grid-auto-flow: dense;
+}
+
+.main-wedo--we-are__item--info .btn{
+    margin-top: 15px;
+}
+
+.main-wedo--we-are__item--info .btn::before,
+.main-wedo--we-are__item--info .btn::after {
+    background: #000;
+    content: '';
+    position: absolute;
+    z-index: -1;
+}
+
+.main-wedo--we-are__item--info .btn::after {
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 0;
+}
+
+.main-wedo--we-are__item--info .btn:hover:after {
+    width: 100%;
+}
+
+.main-wedo--we-are__item--info .btn:hover {
+    color: #fff;
+}
+
+.main-wedo--we-are__item--info .btn,
+.main-wedo--we-are__item--info .btn::after {
+    -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.main-wedo--we-are__item--info div .title-bolder {
+    padding-bottom: 0;
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+    .main-wedo__destaque__items {
+        grid-template-columns: 1fr;
+    }
+
+    .main-wedo__destaque--cards {
+        border-right: none;
+        border-bottom: 1px solid #3b3b3b;
+    }
+
+    .main-wedo__destaque--cards:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .main-wedo__destaque__containner img {
+        padding-bottom: 0;
+    }
+
+    .bg-yellow {
+        height: 70%;
+    }
+
+    .main-wedo--we-are__item--info div .title-bolder, .main-wedo--we-are__item--info div span:first-child {
+        font-size: 50px;
+    }
 }
 
 @media only screen 
@@ -226,12 +306,42 @@
         font-size: 50px;
     }
 
-    .main-wedo--we-are__item--info div span:last-child {
+    .main-wedo--we-are__item--info div span:last-child, .main-wedo__destaque--cards span:last-child {
         font-size: 12px;
     }
 
     .main-wedo--we-are__item--info img {
         width: 300px;
         height: 200px;
+    }
+
+    .main-wedo__destaque__items {
+        grid-template-columns: 1fr;
+    }
+
+    .main-wedo__destaque--cards {
+        border-right: none;
+        border-bottom: 1px solid #3b3b3b;
+    }
+
+    .main-wedo__destaque--cards:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .main-wedo__destaque__containner img {
+        padding-bottom: 0;
+    }
+
+    .bg-yellow {
+        height: 90%;
+    }
+
+    .main-wedo__img--text h1 {
+        font-size: 45px;
+    }
+
+    .main-wedo__call__container span:first-child {
+        font-size: 25px;
     }
 }

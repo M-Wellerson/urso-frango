@@ -1,0 +1,123 @@
+.main-trips {
+    max-width: 100vw;
+    height: auto;
+}
+
+.main-trips__header {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.main-trips__img--text div {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: -100px;
+}
+
+.main-trips__img--text h1 {
+    font-family: Anybody Flex;
+    font-size: 150px;
+    font-weight: 900;
+    font-stretch: expanded;
+    letter-spacing: 2.14px;
+    color: #3b3b3b;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.main-trips__img--text span {
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #3b3b3b;
+    text-transform: uppercase;
+}
+
+.main-trips__articles, .main-trips__articles__container {
+    width: 100%;
+    height: auto;
+}
+
+.main-trips__articles__container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.main-trips__articles__row {
+    width: var(--width-default);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.main-trips__articles__card {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-left: 1px solid var(--border-color);
+}
+
+.main-trips__articles__card:last-child {
+    border-right: 1px solid var(--border-color);
+}
+
+.main-trips__articles__card--inner {
+    width: 80%;
+    margin: 20px 0 20px 0;
+}
+
+.main-trips__articles__card--inner > span {
+    width: 50%;
+    height: auto;
+    background-color: #ffffff;
+    font-family: var(--font-family);
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    color: #3b3b3b;
+    text-transform: uppercase;
+}
+
+.main-trips__articles__card--inner > img {
+    display: block;
+    max-width: 100%;
+    height: 450px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+.main-trips__articles__card--info {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.main-trips__articles__card--info div {
+    justify-self: right;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+
+    .main-trips__img--text h1 {
+        font-size: 45px;
+    }
+
+    .main-trips__articles__row {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+}
