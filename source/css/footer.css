@@ -3,7 +3,7 @@
     align-items: center;
     justify-items: center;
     font-family: Manrope;
-    background-color: #242424;
+    background-color: var(--bg-footer);
     width: 100%;
     color: #fff;
     height: auto;
@@ -68,6 +68,12 @@
     filter: invert();
     color: #ffffff;
     margin-left: 12px;
+}
+
+.footer_social-media--icons img:hover {
+    filter: invert(0);
+    background-color: #fff;
+    border-radius: 30px;
 }
 
 .footer__item__info--link {

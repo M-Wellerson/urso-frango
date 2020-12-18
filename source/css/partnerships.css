@@ -29,6 +29,13 @@
     color: #3b3b3b;
     text-transform: uppercase;
     margin-bottom: 0;
+    transition: font-weight 1s ease, font-stretch 1s ease;
+    cursor: default;
+}
+
+.main-partnerships__img--text h1:hover {
+    font-weight: 600;
+    font-stretch: 80%;
 }
 
 .main-partnerships__img--text span {
@@ -133,6 +140,7 @@
 .main-partnerships--we-are__item--info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-column-gap: 25px;
 }
 
 .main-partnerships--we-are__item--info div {

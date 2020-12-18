@@ -247,6 +247,10 @@
     align-items: center;
 }
 
+.main-home__insta--text-title {
+    position: relative;
+}
+
 .main-home__insta--text, .main-home__colecao--text, .main-home__trips--text {
     width: 100%;
     display: grid;
@@ -278,8 +282,13 @@
     font-stretch: 80%;
 }
 
+.main-home__insta--text h1:hover {
+    font-weight: 600;
+    font-stretch: 80%;
+}
+
 .main-home__insta--text h1 {
-   font-family: Anybody-Extra-Bold;
+    font-weight: 1000;
 }
 
 .btn {
@@ -430,6 +439,21 @@
     border: solid 1px var(--grey);
     background-color: #ffffff;
     cursor: pointer;
+    transition: all .2s ease-out;
+    overflow: hidden;
+}
+
+.btn--arrow:hover img {
+    animation-name: next;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes next {
+    0%{ margin-left: 0px; }
+    50%{ margin-left: 60px; }
+    51%{ margin-left: -60px; }
+    100%{ margin-left: 0px; }
 }
 
 .btn--arrow--invert {
@@ -521,7 +545,9 @@
 .main-home__colecao--text .btn::before,
 .main-home__colecao--text .btn::after,
 .main-home__trips--text .btn::before,
-.main-home__trips--text .btn::after {
+.main-home__trips--text .btn::after,
+.main-home__insta--text .btn::before,
+.main-home__insta--text .btn::after {
     background: #000;
     content: '';
     position: absolute;
@@ -529,7 +555,8 @@
 }
 
 .main-home__colecao--text .btn::after,
-.main-home__trips--text .btn::after {
+.main-home__trips--text .btn::after,
+.main-home__insta--text .btn::after {
     height: 100%;
     left: 0;
     top: 0;
@@ -537,19 +564,23 @@
 }
   
 .main-home__colecao--text .btn:hover:after,
-.main-home__trips--text .btn:hover:after {
+.main-home__trips--text .btn:hover:after,
+.main-home__insta--text .btn:hover:after {
     width: 100%;
 }
 
 .main-home__colecao--text .btn:hover,
-.main-home__trips--text .btn:hover {
+.main-home__trips--text .btn:hover,
+.main-home__insta--text .btn:hover {
     color: #fff;
 }
 
 .main-home__colecao--text .btn,
 .main-home__colecao--text .btn::after,
 .main-home__trips--text .btn,
-.main-home__trips--text .btn::after {
+.main-home__trips--text .btn::after,
+.main-home__insta--text .btn,
+.main-home__insta--text .btn::after {
   -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
   -o-transition: all 0.3s;

@@ -15,7 +15,8 @@ let darkmode = {
     '--border-color'     : { dark: '#fff', light: '#161616' },
     '--grey'             : { dark:  '#fff', light: '#3b3b3b' },
     '--glass'            : { dark:  'hsla(0, 0%, 0%, 0.5)', light: 'hsla(0, 0%, 100%, 0.5)' },
-    '--bg-font-variable' : { dark:  '#0B1335', light: '#fb3729' },
+    '--bg-font-variable' : { dark:  '#161616', light: '#fb3729' },
+    '--bg-footer'        : { dark:  '#161616', light: '#242424' },
 };
 
 const sunMoonContainer = document.querySelector('.sun-moon-container')
