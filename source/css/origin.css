@@ -97,7 +97,10 @@
     margin-top: 70px;
 }
 
-.main-origin--video iframe {
+.main-origin--video img {
+    max-width: 1140px;
+    height: auto;
+    border: 1px solid var(--border-color);
     margin-bottom: 70px;
 }
 
@@ -126,7 +129,7 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.main-origin--we-are__item--info div {
+.main-origin--we-are__item--info div span:first-child {
     text-transform: uppercase;
 }
 
@@ -162,24 +165,14 @@
     color: var(--grey);
 }
 
-.main-origin--we-are__item--info:last-child {
-    grid-auto-flow: dense;
-}
-
-.main-origin--timeline {
-    justify-items: right;
-}
-
 .main-origin--timeline__container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    scroll-snap-type: x mandatory;
-    overflow-x: scroll;
+    width: var(--width-default);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .main-origin--timeline__card {
-    width: min(400px, 25rem);
+    width: clamp(17.18rem, 1fr,24.68rem);
     height: auto;
     display: grid;
     align-items: center;
@@ -187,6 +180,10 @@
     height: auto;
     padding: 25px;
     border-left: 1px solid var(--grey);
+}
+
+.main-origin--timeline__card:last-child{
+    border-right: 1px solid var(--grey);
 }
 
 .main-origin--timeline__card:hover {
@@ -273,20 +270,20 @@
 
 @media only screen 
   and (min-device-width: 768px) 
-  and (max-device-width: 1024px) {
-    .main-origin--video iframe {
-        width: 780px;
-        height: 580px;
+  and (max-device-width: 1024px) { 
+    .main-origin--timeline__container {
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+    }
+
+    .main-origin--video img {
+        width: 666px;
     }
 }
 
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px) {
-    .main-origin--video iframe {
-        width: 340px;
-        height: 500px;
-    }
 
     .main-origin__img--text h1 {
         font-size: 45px;
@@ -315,5 +312,16 @@
     .main-origin--we-are__item--info img {
         width: 300px;
         height: 200px;
+    }
+
+    .main-origin--video img {
+        width: 333px;
+    }
+
+    .main-origin--timeline__container {
+        width: 100%;
+        scroll-snap-type: x mandatory;
+        overflow-x: scroll;
+        overflow-y: visible;
     }
 }

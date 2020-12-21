@@ -109,6 +109,7 @@
     grid-template-columns: 80% 20%;
     align-items: center;
     margin-top: 25px;
+    font-family: var(--font-family);
 }
 
 .main-trips__articles__card--info div {

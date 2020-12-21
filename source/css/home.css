@@ -588,8 +588,8 @@
 }
 
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) {
+  and (min-width: 768px)
+  and (max-width: 1024px) {
     .main-home__products__inner, .main-home__colecao--item__containner, .main-home__trip--item__containner, .main-home__insta--item__containner {
         width: 100%;
         scroll-snap-type: x mandatory;
@@ -602,8 +602,8 @@
 }
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px) {
+  and (min-width: 320px) 
+  and (max-width: 480px) {
     .main-home__colecao--text, .main-home__trips--text {
         grid-template-columns: 1fr;
         margin-bottom: 15px;
