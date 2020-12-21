@@ -193,11 +193,8 @@
     grid-template-columns: 1fr 1fr;
 }
 
-.main-wedo--we-are__item--info div {
-    text-transform: uppercase;
-}
-
 .main-wedo--we-are__item--info div span:first-child {
+    text-transform: uppercase;
     font-family: Anybody Flex;
     font-size: 80px;
     font-weight: 200;
@@ -221,8 +218,6 @@
     font-family: var(--font-family);
     font-size: 12px;
     font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.83;
     letter-spacing: 0.4px;
     color: var(--grey);
