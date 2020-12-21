@@ -396,13 +396,38 @@
     margin-right: auto;
 }
 
-.title-colecao, .title-trip {
+.title-colecao, .title-trip span {
     display: block;
-    width: 220px;
+    width: 70%;
     height: auto;
     background-color: #fff;
     margin-bottom: 33px;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.title-trip span:first-child {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.title-trip-1 {
+    width: 50% !important;
+}
+
+.title-trip-2 {
+    width: 40% !important;
+}
+.title-trip-5 {
+    width: 20% !important;
+}
+
+.title-trip-3 {
+    width: 40% !important;
+}
+
+.title-trip-4 {
+    width: 55% !important;
 }
 
 .title-colecao span, .title-trip span {

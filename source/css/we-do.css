@@ -266,6 +266,11 @@
     padding-bottom: 0;
 }
 
+.main-wedo .main-home__products--item--img {
+    display: grid;
+    justify-items: center;
+}
+
 @media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) {
