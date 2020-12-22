@@ -403,7 +403,7 @@
     text-align: left;
 }
 
-.title-trip span {
+.title-trip span, .title-colecao span {
     background-color: #fff;
 }
 
@@ -528,7 +528,7 @@
     position: absolute;
     right: -30px;
     top: 50px;
-    width: 104px;
+    width: 200px;
     height: 34px;
     background-color: var(--red);
 }
@@ -732,5 +732,9 @@
     .rotate-logo {
         right: 20px;
         top: -11%;
+    }
+
+    .main-home__img-supere__inner {
+        background-image: url("./../img/bannershop-02.png");
     }
 }
