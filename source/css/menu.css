@@ -167,10 +167,7 @@ header {
     display: flex;
     z-index: 999999;
     position: fixed;
-    top: 50px;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
+    top: -500px;;
     height: 100vh;
     padding-top: 30px;
     background-color: var(--yellow);
@@ -504,7 +501,7 @@ header {
     }
 
     .menu__options--mobile {
-        top: 100%;
+        top: 50px;
     }
 
     .popup__cart {
