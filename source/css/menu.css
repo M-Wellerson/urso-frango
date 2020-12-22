@@ -71,7 +71,9 @@ header {
 .grassphomisf {
     z-index: 9999;
     backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
     background-clip: padding-box;
+    -webkit-background-clip: padding-box;
     box-shadow: 10px 10px 10px  rgba(46, 54, 68, 0.03);
     background-color: var(--glass);
     border: solid 2px transparent;
@@ -168,9 +170,9 @@ header {
     z-index: 999999;
     position: fixed;
     top: 100px;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
+    bottom: 0;
+    left: 0;
+    right: 0;
     height: 100vh;
     padding-top: 30px;
     background-color: var(--yellow);
@@ -215,7 +217,7 @@ header {
 
 .menu_social-media-mobile {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
     padding: 35px;
@@ -472,7 +474,7 @@ header {
     }
 
     .menu__options--mobile {
-        top: 100%;
+        top: 102px;
     }
 
     .sun-moon-container {

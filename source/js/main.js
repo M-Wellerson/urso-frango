@@ -1,8 +1,10 @@
 window.onscroll = function() {
     if( window.scrollY > 3 ) {
         document.querySelector('.header').style.display = 'none';
+        document.querySelector('.menu__options--mobile').style.top = '67px';
     }else{
         document.querySelector('.header').style.display = 'grid';
+        document.querySelector('.menu__options--mobile').style.top = '102px';
     }
 
     let rotate = window.scrollY / 600 % Math.PI;
