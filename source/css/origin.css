@@ -23,7 +23,7 @@
     font-weight: 900;
     font-stretch: expanded;
     letter-spacing: 2.14px;
-    color: #3b3b3b;
+    color: #222222;
     text-transform: uppercase;
     margin-bottom: 0;
     transition: font-weight 1s ease, font-stretch 1s ease;
@@ -259,18 +259,17 @@
 .main-origin-social__img__media--icons img {
     width: 68px;
     height: 68px;
-    filter: invert();
 }
 
 .main-origin-social__img__media--icons img:hover {
-    filter: invert(0);
+    filter: invert();
     background-color: #fff;
     border-radius: 40px;
 }
 
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) { 
+  and (min-width: 768px) 
+  and (max-width: 1024px) { 
     .main-origin--timeline__container {
         scroll-snap-type: x mandatory;
         overflow-x: scroll;
@@ -282,8 +281,8 @@
 }
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px) {
+  and (min-width: 320px) 
+  and (max-width: 480px) {
 
     .main-origin__img--text h1 {
         font-size: 45px;

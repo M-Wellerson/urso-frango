@@ -261,8 +261,8 @@
 }
 
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) {
+  and (min-width: 768px) 
+  and (max-width: 1024px) {
     .main-partnerships--video iframe {
         width: 780px;
         height: 580px;
@@ -294,8 +294,8 @@
 }
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px) {
+  and (min-width: 320px) 
+  and (max-width: 480px) {
 
     .main-partnerships__img--text h1 {
         font-size: 45px;

@@ -36,7 +36,7 @@
     font-weight: 900;
     font-stretch: expanded;
     letter-spacing: 2.14px;
-    color: #3b3b3b;
+    color: #222222;
     text-transform: uppercase;
     margin-bottom: 0;
     transition: font-weight 1s ease, font-stretch 1s ease;
@@ -141,6 +141,7 @@
     text-align: center;
     color: #3b3b3b;
     margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 .main-wedo__destaque--cards--sub-title {
@@ -152,6 +153,7 @@
     text-align: center;
     color: #3b3b3b;
     margin-bottom: 35px;
+    text-transform: uppercase;
 }
 
 .main-wedo__destaque--cards span:last-child {
@@ -272,8 +274,8 @@
 }
 
 @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) {
+  and (min-width: 768px) 
+  and (max-width: 1024px) {
     .main-wedo__destaque__items {
         grid-template-columns: 1fr;
     }
@@ -306,8 +308,8 @@
 }
 
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px) {
+  and (min-width: 320px) 
+  and (max-width: 480px) {
 
     .main-wedo--we-are__item--info {
         grid-template-columns: 1fr;

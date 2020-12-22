@@ -322,22 +322,20 @@
     width: var(--width-default);
     height: auto;
     display: grid;
-    align-items: center;
     grid-template-columns: repeat(3, 1fr);
 }
 
 .main-home__colecao--item__inner, .main-home__trip--item__inner {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     display: grid;
     align-items: center;
     justify-items: center;
     border-right: 1px solid var(--border-color);
-    margin: 0 15px 0 15px;
 }
 
-.main-home__colecao--item__inner div, .main-home__trip--item__inner div {
-    margin: 15px 15px 30px 15px;
+.main-home__colecao--item__inner div, .main-home__trip--item__inner > div {
+    margin: 0.93rem 0.93rem 1.87rem 0.93rem;
 }
 
 .main-home__colecao--item__inner:hover, 
@@ -389,33 +387,31 @@
 
 .main-home__colecao--item__inner img, .main-home__trip--item__inner img {
     display: block;
-    max-width: 355px;
+    width: 100%;
+    max-width: 400px;
     height: 450px;
     object-fit: cover;
     margin-left: auto;
     margin-right: auto;
 }
 
-.title-colecao, .title-trip span {
+.title-colecao, .title-trip {
     display: block;
-    width: 70%;
     height: auto;
-    background-color: #fff;
     margin-bottom: 33px;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
 }
 
-.title-trip span:first-child {
-    display: block;
-    margin-bottom: 8px;
+.title-trip span {
+    background-color: #fff;
 }
 
-.title-trip-1 {
-    width: 50% !important;
-}
+/* .title-trip-1 {
+    width: 80% !important;
+} */
 
-.title-trip-2 {
+/* .title-trip-2 {
     width: 40% !important;
 }
 .title-trip-5 {
@@ -428,11 +424,11 @@
 
 .title-trip-4 {
     width: 55% !important;
-}
+} */
 
 .title-colecao span, .title-trip span {
     font-family: Manrope;
-    font-size: 25px;
+    font-size: clamp( 1rem, 1.5vw, 1.40rem );
     font-weight: 600;
     letter-spacing: 2.5px;
     color: var(--grey);
@@ -443,6 +439,10 @@
     width: 100%;
     grid-template-columns: 80% 20%;
     margin-top: 25px;
+}
+
+.main-home__trip--body .btn--arrow {
+    justify-self: center;
 }
 
 .main-home__trip--body span {
@@ -624,6 +624,10 @@
     .main-home__insta--item__containner img {
         width: 80%;
     }
+
+    .main-home__trip--item__inner {
+        width: 300px;
+    }
 }
 
 @media only screen 
@@ -706,6 +710,10 @@
         grid-column-gap: 0;
         letter-spacing: 1px;
         line-height: 25px;
+    }
+
+    .main-home__trip--item__inner {
+        width: 300px;
     }
 
     .main-home__colecao--item__inner img, .main-home__trip--item__inner > div > img {
