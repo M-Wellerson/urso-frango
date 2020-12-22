@@ -152,7 +152,7 @@ header {
 }
 
 .menu__options--mobile-icon, .menu__options--mobile {
-    display: none;
+    display: block;
 }
 
 #nav-mobile:checked ~ .menu__options--mobile {
