@@ -165,7 +165,7 @@ header {
 }
 
 .menu__options--mobile {
-    display: none;
+    display: block;
     z-index: 999999;
     position: fixed;
     top: 7%;
