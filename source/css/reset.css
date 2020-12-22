@@ -2,12 +2,11 @@
     -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
 }
-  body {
+body {
     margin: 0;
     background-color: var(--primary-color);
     color: var(--grey);
     transition: 1s;
-    overflow-x: hidden;
 }
 
 main {
