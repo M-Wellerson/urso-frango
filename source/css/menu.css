@@ -167,7 +167,7 @@ header {
     display: flex;
     z-index: 999999;
     position: fixed;
-    top: 7%;
+    top: 50px;
     bottom: 0%;
     left: 0%;
     right: 0%;
