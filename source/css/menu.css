@@ -152,7 +152,7 @@ header {
 }
 
 .menu__options--mobile-icon, .menu__options--mobile {
-    display: block;
+    display: none;
 }
 
 #nav-mobile:checked ~ .menu__options--mobile {
@@ -165,7 +165,7 @@ header {
 }
 
 .menu__options--mobile {
-    display: block;
+    display: none;
     z-index: 999999;
     position: fixed;
     top: 7%;
