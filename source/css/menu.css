@@ -167,7 +167,7 @@ header {
     display: none;
     z-index: 999999;
     position: fixed;
-    top: 50px;
+    top: 100px;
     bottom: 0%;
     left: 0%;
     right: 0%;
@@ -504,7 +504,7 @@ header {
     }
 
     .menu__options--mobile {
-        top: 50px;
+        top: 102px;
     }
 
     .popup__cart {
