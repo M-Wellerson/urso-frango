@@ -164,10 +164,9 @@ header {
 }
 
 .menu__options--mobile {
-    display: flex;
+    display: block;
     z-index: 999999;
-    position: fixed;
-    top: -500px;;
+    
     height: 100vh;
     padding-top: 30px;
     background-color: var(--yellow);
@@ -501,7 +500,7 @@ header {
     }
 
     .menu__options--mobile {
-        top: -500px;
+        top: 100%;
     }
 
     .popup__cart {
