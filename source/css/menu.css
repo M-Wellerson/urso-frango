@@ -166,7 +166,11 @@ header {
 .menu__options--mobile {
     display: block;
     z-index: 999999;
-    
+    position: fixed;
+    top: 7%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
     height: 100vh;
     padding-top: 30px;
     background-color: var(--yellow);
