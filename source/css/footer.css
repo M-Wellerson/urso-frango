@@ -203,5 +203,9 @@
         border-bottom: 2px solid #fff;
         padding-bottom: 20px;
         grid-row: 1;
-    } 
+    }
+
+    .footer__item__social > div:nth-child(2) {
+        display: none;
+    }
 }
