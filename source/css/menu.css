@@ -501,7 +501,7 @@ header {
     }
 
     .menu__options--mobile {
-        top: 50px;
+        top: -500px;
     }
 
     .popup__cart {
