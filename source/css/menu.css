@@ -156,8 +156,7 @@ header {
 }
 
 #nav-mobile:checked ~ .menu__options--mobile {
-    display: block !important;
-    
+    display: block !important;    
 }
 
 .menu__options--mobile-icon img {
