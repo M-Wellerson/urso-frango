@@ -151,7 +151,7 @@ header {
     height: auto;
 }
 
-.menu__options--mobile-icon, .menu__options--mobile {
+.menu__options--mobile-icon {
     display: none;
 }
 
@@ -164,7 +164,7 @@ header {
 }
 
 .menu__options--mobile {
-    display: none;
+    display: block;
     z-index: 999999;
     position: fixed;
     top: 7%;
