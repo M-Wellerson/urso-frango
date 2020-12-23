@@ -154,7 +154,7 @@
     padding-bottom: 25px;
 }
 
-.main-home__text div {
+.main-home__text a {
     justify-self: right;
 }
 
@@ -367,6 +367,7 @@
     height: auto;
     display: grid;
     align-items: center;
+    object-fit: cover;
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -381,8 +382,8 @@
 
 .main-home__insta--item__containner img {
     margin: 20px 0 20px 0;
-    max-width: 80%;
-    height: auto;
+    max-width: 155px;
+    height: 155px;
 }
 
 .main-home__colecao--item__inner img, .main-home__trip--item__inner img {
@@ -506,6 +507,9 @@
 }
 
 .main-home__img-supere__inner {
+    display: grid;
+    align-items: center;
+    justify-content: center;
     position: relative;
     width: var(--width-default);
     max-height: 100%;
@@ -541,26 +545,6 @@
     font-style: italic;
     letter-spacing: 0.57px;
     color: #ffffff;
-}
-
-.main-home__img-supere--novo-1 {
-    position: absolute;
-    left: 10%;
-    bottom: 90px;
-    display: block;
-}
-
-.main-home__img-supere--novo-1 span {
-    background-color: #fff;
-    display: block;
-    padding: 0 15px 0 15px;
-    text-align: left;
-    font-family: Manrope;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 600;
-    letter-spacing: 2.5px;
-    color: var(--grey);
 }
 
 .border--img {
@@ -730,8 +714,13 @@
     }
 
     .rotate-logo {
-        right: 20px;
+        right: -15px;
         top: -11%;
+        background-size: 220px 120px, cover;
+    }
+
+    .rotate-logo img {
+        width: 80%;
     }
 
     .main-home__img-supere__inner {
