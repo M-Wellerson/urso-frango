@@ -402,6 +402,7 @@
     margin-bottom: 33px;
     text-transform: uppercase;
     text-align: left;
+    text-decoration: none;
 }
 
 .title-trip span, .title-colecao span {
