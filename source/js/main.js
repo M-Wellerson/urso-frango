@@ -26,7 +26,7 @@ document.querySelector('.lamp_mode-color').addEventListener('click', () => {
     let darkModeSet = document.body.classList.toggle('dark');
     const currentRotation = parseInt(getComputedStyle(sunMoonContainer).getPropertyValue('--rotation')) + 180;
     if(darkModeSet) {
-        setStorage()
+        // setStorage()
         sunMoonContainer.style.setProperty('--rotation', currentRotation);
         document.querySelector('.dark-mode-img').removeAttribute('hidden');
         document.querySelector('.ligh-mode-img').setAttribute('hidden', '');
@@ -35,7 +35,7 @@ document.querySelector('.lamp_mode-color').addEventListener('click', () => {
             document.documentElement.style.setProperty(items[0], items[1].dark);
         });
     }else{
-        setStorage()
+        // setStorage()
         sunMoonContainer.style.setProperty('--rotation', currentRotation);
         document.querySelector('.dark-mode-img').setAttribute('hidden', '');
         document.querySelector('.ligh-mode-img').removeAttribute('hidden');
